@@ -31,13 +31,38 @@
 
 		<section id="products" class="w-full h-fit px-5 py-12 bg-gray-400">
 			<div class="container flex flex-col">
-				<div>Our Products</div>
-				<div class="grid">
+				<div class="text-4xl mb-4">Our Products</div>
+				<div class="flex gap-5 flex-wrap justify-evenly">
 					{#each products as product}
 						<ProductCard
 							photo={product.image}
 							name={product.name}
 							description={product.description}
+						/>
+						<ProductCard
+							photo={product.image}
+							name={product.name}
+							description={product.description}
+						/>
+						<ProductCard
+							photo={product.image}
+							name={product.name}
+							description={product.description}
+						/>
+						<ProductCard
+							photo={product.image}
+							name={product.name}
+							description={product.description}
+						/>
+						<ProductCard
+						photo={product.image}
+						name={product.name}
+						description={product.description}
+						/>
+						<ProductCard
+						photo={product.image}
+						name={product.name}
+						description={product.description}
 						/>
 					{/each}
 				</div>
