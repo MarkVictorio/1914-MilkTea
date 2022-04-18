@@ -1,6 +1,7 @@
 <script lang="ts">
 	import logo from "./assets/svelte.png";
 	import headerPic from "./assets/milkTea1.png";
+	import exteriorPic from "./assets/exterior.jpg";
 	import ProductCard from "./lib/ProductCard.svelte";
 	import Counter from "./lib/Counter.svelte";
 	import products from "./lib/products";
@@ -29,33 +30,49 @@
 			</div>
 		</section>
 
-		<section id="products" class="w-full h-fit px-5 py-12 bg-gray-400">
-			<div class="container flex flex-col">
-				<div>Our Products</div>
-				<div class="grid">
-					{#each products as product}
-						<ProductCard
-							photo={product.image}
-							name={product.name}
-							description={product.description}
-						/>
-					{/each}
+		<section id="products" class="w-full h-fit px-20 py-12 bg-gray-400">
+			<div class="flex flex-col w-full">
+				<h2 class="mb-10 font-bold text-2xl">Our Products</h2>
+				<div class="flex justify-center w-full">
+					<div class="grid grid-cols-3 gap-24">
+						{#each products as product}
+							<ProductCard
+								photo={product.image}
+								name={product.name}
+								description={product.description}
+							/>
+						{/each}
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section id="address" class="w-full h-fit px-5 py-12 bg-gray-300">
-			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis aliquam
-			asperiores, officiis ducimus nisi consectetur soluta, nostrum laborum
-			dolore debitis illo natus quisquam excepturi corrupti repudiandae possimus
-			enim recusandae rem?
+		<section
+			id="address"
+			class="w-full h-fit px-5 py-12 bg-gray-300 flex justify-center"
+		>
+			<div class="container bg-stone-600 flex justify-center p-12 gap-x-12">
+				<div class="p-4 bg-gray-200 shadow-md">
+					<img src={exteriorPic} alt="Storefront" class="h-96" />
+				</div>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+					molestiae.
+				</p>
+			</div>
 		</section>
 
 		<section id="contact" class="w-full h-fit px-5 py-12 bg-gray-200">
-			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis aliquam
-			asperiores, officiis ducimus nisi consectetur soluta, nostrum laborum
-			dolore debitis illo natus quisquam excepturi corrupti repudiandae possimus
-			enim recusandae rem?
+			<div class="flex flex-col items-center gap-y-5">
+				<h3 class="text-6xl">CONTACT US</h3>
+				<p>Phone Numbers</p>
+				<a href="mailto:example@gmail.com">
+					<button
+						class="border-2 border-gray-600 text-black px-4 py-2 rounded-md text-1xl font-medium hover:bg-gray-600 transition duration-300"
+						>Email Us</button
+					>
+				</a>
+			</div>
 		</section>
 	</div>
 </main>
