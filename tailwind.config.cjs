@@ -1,7 +1,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js,ts,svelte}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily : {
+        'poppins' : ['Poppins', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }

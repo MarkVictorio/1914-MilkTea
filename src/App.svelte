@@ -2,6 +2,7 @@
 	import logo from "./assets/svelte.png";
 	import headerPic from "./assets/milkTea1.png";
 	import exteriorPic from "./assets/exterior.jpg";
+	import backgroundPic from "./assets/milkteabg.png";
 	import ProductCard from "./lib/ProductCard.svelte";
 	import Counter from "./lib/Counter.svelte";
 	import products from "./lib/products";
@@ -12,22 +13,24 @@
 		<nav class="h-10">lorem</nav>
 
 		<section id="home" class="w-full h-fit px-5 py-12 bg-gray-500">
-			<div class="container flex justify-center gap-x-12">
-				<div class="flex p-12 bg-stone-50 w-fit h-fit shadow-md">
-					<img src={headerPic} alt="milkTea" class="h-96 object-scale-down" />
+			<header class="flex justify-center h-screen mb-12 bg-fixed bg-center bg-cover" src={backgroundPic}>
+				<div class="container flex justify-center gap-x-12">
+					<div class="flex p-12 bg-stone-50 w-fit h-fit shadow-md rounded-lg">
+						<img src={headerPic} alt="milkTea" class="h-96 object-scale-down rounded-lg" />
+					</div>
+					<div class="flex flex-col justify-center">
+						<h1 class="text-white font-black text-5xl">1914 Milk Tea Shop</h1>
+						<span>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis <br
+							/>
+							adipisci repudiandae, pariatur labore maxime laudantium similique
+							<br />
+							delectus, ipsa praesentium deleniti architecto, reprehenderit <br />
+							voluptates error! Earum maxime iusto natus velit adipisci! <br />
+						</span>
+					</div>
 				</div>
-				<div class="flex flex-col justify-center">
-					<h1 class="text-white font-black text-5xl">1914 Milk Tea Shop</h1>
-					<span>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis <br
-						/>
-						adipisci repudiandae, pariatur labore maxime laudantium similique
-						<br />
-						delectus, ipsa praesentium deleniti architecto, reprehenderit <br />
-						voluptates error! Earum maxime iusto natus velit adipisci! <br />
-					</span>
-				</div>
-			</div>
+			</header>
 		</section>
 
 		<section id="products" class="w-full h-fit px-20 py-12 bg-gray-400">
