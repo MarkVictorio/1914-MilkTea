@@ -13,7 +13,6 @@
 		<nav class="h-10">lorem</nav>
 
 		<section id="home" class="w-full h-fit px-5 py-12 bg-gray-500">
-			<header class="flex justify-center h-screen mb-12 bg-fixed bg-center bg-cover" src={backgroundPic}>
 				<div class="container flex justify-center gap-x-12">
 					<div class="flex p-12 bg-stone-50 w-fit h-fit shadow-md rounded-lg">
 						<img src={headerPic} alt="milkTea" class="h-96 object-scale-down rounded-lg" />
@@ -30,12 +29,15 @@
 						</span>
 					</div>
 				</div>
-			</header>
 		</section>
 
 		<section id="products" class="w-full h-fit px-20 py-12 bg-gray-400">
 			<div class="flex flex-col w-full">
-				<h2 class="mb-10 font-bold text-2xl">Our Products</h2>
+				<h2 class="text-center overflow-hidden before:h-[1px] after:h-[1px] after:bg-white 
+				after:inline-block after:relative after:align-middle after:w-1/4 
+				before:bg-white before:inline-block before:relative before:align-middle 
+				before:w-1/4 before:right-2 after:left-2 p-4 mb-10 font-bold text-3xl 
+				italic text-white">OUR PRODUCTS</h2>
 				<div class="flex justify-center w-full">
 					<div class="grid grid-cols-3 gap-24">
 						{#each products as product}
@@ -58,9 +60,8 @@
 				<div class="p-4 bg-gray-200 shadow-md">
 					<img src={exteriorPic} alt="Storefront" class="h-96" />
 				</div>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-					molestiae.
+				<p class="text-white text-4xl font-poppins font-bold">
+					Where to find us:
 				</p>
 			</div>
 		</section>
