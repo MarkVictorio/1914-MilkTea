@@ -1,4 +1,13 @@
 <script lang="ts">
+	// TODO:
+	// - Change color pallete
+	// - Change fonts?
+	// - Make the ContactUs section bigger
+	// - Add Phone Number in ContactUs section
+	// - Add Address content
+	// - Add more "rustic" design elements
+	// - Do the navbar
+
 	import logo from "./assets/svelte.png";
 	import headerPic from "./assets/milkTea1.png";
 	import exteriorPic from "./assets/exterior.jpg";
@@ -13,31 +22,39 @@
 		<nav class="h-10">lorem</nav>
 
 		<section id="home" class="w-full h-fit px-5 py-12 bg-gray-500">
-				<div class="container flex justify-center gap-x-12">
-					<div class="flex p-12 bg-stone-50 w-fit h-fit shadow-md rounded-lg">
-						<img src={headerPic} alt="milkTea" class="h-96 object-scale-down rounded-lg" />
-					</div>
-					<div class="flex flex-col justify-center">
-						<h1 class="text-white font-black text-5xl">1914 Milk Tea Shop</h1>
-						<span>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis <br
-							/>
-							adipisci repudiandae, pariatur labore maxime laudantium similique
-							<br />
-							delectus, ipsa praesentium deleniti architecto, reprehenderit <br />
-							voluptates error! Earum maxime iusto natus velit adipisci! <br />
-						</span>
-					</div>
+			<div class="container flex justify-center gap-x-12">
+				<div class="flex p-12 bg-stone-50 w-fit h-fit shadow-md rounded-lg">
+					<img
+						src={headerPic}
+						alt="milkTea"
+						class="h-96 object-scale-down rounded-lg"
+					/>
 				</div>
+				<div class="flex flex-col justify-center gap-y-4">
+					<h1 class="text-white font-black text-5xl">1914 Milk Tea Shop</h1>
+					<span class="leading-5">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis <br
+						/>
+						adipisci repudiandae, pariatur labore maxime laudantium similique
+						<br />
+						delectus, ipsa praesentium deleniti architecto, reprehenderit <br />
+						voluptates error! Earum maxime iusto natus velit adipisci! <br />
+					</span>
+				</div>
+			</div>
 		</section>
 
 		<section id="products" class="w-full h-fit px-20 py-12 bg-gray-400">
-			<div class="flex flex-col w-full">
-				<h2 class="text-center overflow-hidden before:h-[1px] after:h-[1px] after:bg-white 
+			<div class="flex flex-col w-full leading-6">
+				<h2
+					class="text-center overflow-hidden before:h-[1px] after:h-[1px] after:bg-white 
 				after:inline-block after:relative after:align-middle after:w-1/4 
 				before:bg-white before:inline-block before:relative before:align-middle 
 				before:w-1/4 before:right-2 after:left-2 p-4 mb-10 font-bold text-3xl 
-				italic text-white">OUR PRODUCTS</h2>
+				italic text-white"
+				>
+					OUR PRODUCTS
+				</h2>
 				<div class="flex justify-center w-full">
 					<div class="grid grid-cols-3 gap-24">
 						{#each products as product}
