@@ -15,11 +15,38 @@
 	import ProductCard from "./lib/ProductCard.svelte";
 	import Counter from "./lib/Counter.svelte";
 	import products from "./lib/products";
+	import Logo from "./assets/Logo.png"
 </script>
 
 <main>
 	<div id="wrapper w-full h-full">
-		<nav class="h-10">lorem</nav>
+		<nav class="h-auto py-2">
+			<div class="container flex flex-wrap justify-between items-center mx-auto">
+				<a href="#" class="flex items-center">
+					<img src={Logo} class="mx-4 h-auto sm:h-9" alt="Logo" />
+					<span class="self-center text-xl font-semibold whitespace-nowrap dark:text-black">1914 Milk Tea - San Rafael</span>
+				</a>
+				<div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+					<ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+					  <li>
+						<a href="/" class="block py-2 pr-4 pl-3">Home</a>
+					  </li>
+					  <li>
+						<a href="#" class="block py-2 pr-4 pl-3">About</a>
+					  </li>
+					  <li>
+						<a href="#products" class="block py-2 pr-4 pl-3">Products</a>
+					  </li>
+					  <li>
+						<a href="#address" class="block py-2 pr-4 pl-3">Address</a>
+					  </li>
+					  <li>
+						<a href="#contact" class="block py-2 pr-4 pl-3">Contact</a>
+					  </li>
+					</ul>
+				  </div>
+			</div>
+		</nav>
 
 		<section id="home" class="w-full h-fit px-5 py-12 bg-gray-500">
 			<div class="container flex justify-center gap-x-12">
