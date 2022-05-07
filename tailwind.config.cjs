@@ -3,10 +3,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage :{
-        'background-pic' : "url('assets/milkteabg.png')"
+        'background-pic' : "url('assets/milkteabg.png')",
+        'background-body' : "url('assets/woodBackground.jpg')"
       },
       fontFamily : {
-        'poppins' : ['Poppins', 'sans-serif']
+        'poppins' : ['Poppins', 'sans-serif'],
+        'lobster' : ['Lobster', 'cursive']
       }
     },
   },

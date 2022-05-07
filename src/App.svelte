@@ -7,23 +7,26 @@
 	// - Add Address content
 	// - Add more "rustic" design elements
 	// - Do the navbar
-
+	import woodPic from "./assets/woodBackground.jpg";
 	import logo from "./assets/svelte.png";
 	import headerPic from "./assets/milkTea1.png";
 	import exteriorPic from "./assets/exterior.jpg";
-	import backgroundPic from "./assets/milkteabg.png";
 	import ProductCard from "./lib/ProductCard.svelte";
 	import Counter from "./lib/Counter.svelte";
 	import products from "./lib/products";
 </script>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&family=Tapestry&display=swap" rel="stylesheet">
+
 <main>
 	<div id="wrapper w-full h-full">
 		<nav class="h-10">lorem</nav>
 
-		<section id="home" class="w-full h-fit px-5 py-12 bg-gray-500">
+		<section id="home" class="w-full h-fit px-5 py-12 bg-[#aebfa0]">
 			<div class="container flex justify-center gap-x-12">
-				<div class="flex p-12 bg-stone-50 w-fit h-fit shadow-md rounded-lg">
+				<div class="flex p-12 bg-[#425a33] w-fit h-fit shadow-md rounded-lg">
 					<img
 						src={headerPic}
 						alt="milkTea"
@@ -31,8 +34,8 @@
 					/>
 				</div>
 				<div class="flex flex-col justify-center gap-y-4">
-					<h1 class="text-white font-black text-5xl">1914 Milk Tea Shop</h1>
-					<span class="leading-5">
+					<h1 class="text-white font-black font-lobster text-7xl">1914 Milk Tea Shop</h1>
+					<span class="leading-5 font-poppins">
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis <br
 						/>
 						adipisci repudiandae, pariatur labore maxime laudantium similique
@@ -44,14 +47,14 @@
 			</div>
 		</section>
 
-		<section id="products" class="w-full h-fit px-20 py-12 bg-gray-400">
+		<section id="products" class="w-full h-fit px-20 py-12 bg-gradient-to-b from-stone-500 to-stone-800">
 			<div class="flex flex-col w-full leading-6">
 				<h2
 					class="text-center overflow-hidden before:h-[1px] after:h-[1px] after:bg-white 
 				after:inline-block after:relative after:align-middle after:w-1/4 
 				before:bg-white before:inline-block before:relative before:align-middle 
 				before:w-1/4 before:right-2 after:left-2 p-4 mb-10 font-bold text-3xl 
-				italic text-white"
+			  text-white font-poppins"
 				>
 					OUR PRODUCTS
 				</h2>
@@ -62,6 +65,7 @@
 								photo={product.image}
 								name={product.name}
 								description={product.description}
+								price={product.price}
 							/>
 						{/each}
 					</div>
@@ -71,25 +75,29 @@
 
 		<section
 			id="address"
-			class="w-full h-fit px-5 py-12 bg-gray-300 flex justify-center"
+			class="w-full h-fit px-5 py-12 bg-gray-300"
 		>
 			<div class="container bg-stone-600 flex justify-center p-12 gap-x-12">
-				<div class="p-4 bg-gray-200 shadow-md">
-					<img src={exteriorPic} alt="Storefront" class="h-96" />
+				<div class="p-4 bg-gray-200 shadow-md rounded-lg">
+					<img src={exteriorPic} alt="Storefront" class="h-96 rounded-lg" />
 				</div>
-				<p class="text-white text-4xl font-poppins font-bold">
-					Where to find us:
-				</p>
+				<div class="flex flex-col gap-y-4 justify-center">
+					<h2 class="text-white text-5xl font-poppins font-bold">
+						Where to find us:
+					</h2>
+					<span class="font-poppins text-2xl leading-4 text-white">JJJ Revita Bldg, MacArthur Hwy, Tarlac City, 2300 Tarlac</span>
+				</div>
+				
 			</div>
 		</section>
 
 		<section id="contact" class="w-full h-fit px-5 py-12 bg-gray-200">
-			<div class="flex flex-col items-center gap-y-5">
-				<h3 class="text-6xl">CONTACT US</h3>
-				<p>Phone Numbers</p>
+			<div class="flex flex-col items-center gap-y-5 font-poppins">
+				<h3 class="text-6xl font-bold">CONTACT US</h3>
+				<p class="font-poppins">Phone Numbers</p>
 				<a href="mailto:example@gmail.com">
 					<button
-						class="border-2 border-gray-600 text-black px-4 py-2 rounded-md text-1xl font-medium hover:bg-gray-600 transition duration-300"
+						class="border-2 border-gray-600 text-black px-4 py-2 rounded-md text-1xl font-medium hover:bg-gray-600 transition duration-300 font-poppins"
 						>Email Us</button
 					>
 				</a>
