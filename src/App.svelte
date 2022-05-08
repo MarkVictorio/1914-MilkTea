@@ -32,24 +32,24 @@
 			<div class="container flex flex-wrap justify-between items-center mx-auto">
 				<a href="/" class="flex items-center">
 					<img src={Logo} class="mx-4 h-auto sm:h-9" alt="Logo" />
-					<span class="self-center text-xl font-semibold whitespace-nowrap dark:text-black">1914 Milk Tea - San Rafael</span>
+					<span class="self-center text-xl font-semibold whitespace-nowrap dark:text-black font-lobster">1914 Milk Tea - San Rafael</span>
 				</a>
 				<div class="hidden w-full md:block md:w-auto" id="mobile-menu">
-					<ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+					<ul class="font-poppins flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
 					  <li>
-						<a href="/" class="block py-2 pr-4 pl-3">Home</a>
+						<a href="/" class="block rounded-md py-2 pr-4 pl-3 hover:bg-[#aebfa0] duration-300 ">Home</a>
 					  </li>
 					  <li>
-						<a href="#about-dev" class="block py-2 pr-4 pl-3">About</a>
+						<a href="#about-dev" class="block rounded-md py-2 pr-4 pl-3 hover:bg-[#aebfa0] duration-300">About</a>
 					  </li>
 					  <li>
-						<a href="#products" class="block py-2 pr-4 pl-3">Products</a>
+						<a href="#products" class="block rounded-md py-2 pr-4 pl-3 hover:bg-[#aebfa0] duration-300">Products</a>
 					  </li>
 					  <li>
-						<a href="#address" class="block py-2 pr-4 pl-3">Address</a>
+						<a href="#address" class="block rounded-md py-2 pr-4 pl-3 hover:bg-[#aebfa0] duration-300">Address</a>
 					  </li>
 					  <li>
-						<a href="#contact" class="block py-2 pr-4 pl-3">Contact</a>
+						<a href="#contact" class="block rounded-md py-2 pr-4 pl-3 hover:bg-[#aebfa0] duration-300">Contact</a>
 					  </li>
 					</ul>
 				  </div>
@@ -126,7 +126,7 @@
 		<section id="contact" class="w-full h-fit px-5 py-12 bg-gray-200">
 			<div class="flex flex-col items-center gap-y-5 font-poppins">
 				<h3 class="text-6xl font-bold">CONTACT US</h3>
-				<p class="font-poppins">Phone Numbers</p>
+				<p class="font-poppins">Phone number: +639369419337</p>
 				<a href="mailto:example@gmail.com">
 					<button
 						class="border-2 border-gray-600 text-black px-4 py-2 rounded-md text-1xl font-medium hover:bg-gray-600 transition duration-300 font-poppins"
