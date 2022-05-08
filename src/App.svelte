@@ -14,7 +14,12 @@
 	import ProductCard from "./lib/ProductCard.svelte";
 	import Counter from "./lib/Counter.svelte";
 	import products from "./lib/products";
-	import Logo from "./assets/Logo.png"
+	import Logo from "./assets/Logo.png";
+	import Jay from "./assets/Jay.jpg";
+	import Ed from "./assets/Ed.jpg";
+	import Noah from "./assets/Noah.jpg";
+	import TJ from "./assets/TJ.jpg";
+	import Mark from "./assets/Mark.jpg";
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +30,7 @@
 	<div id="wrapper w-full h-full">
 		<nav class="h-auto py-2">
 			<div class="container flex flex-wrap justify-between items-center mx-auto">
-				<a href="#" class="flex items-center">
+				<a href="/" class="flex items-center">
 					<img src={Logo} class="mx-4 h-auto sm:h-9" alt="Logo" />
 					<span class="self-center text-xl font-semibold whitespace-nowrap dark:text-black">1914 Milk Tea - San Rafael</span>
 				</a>
@@ -35,7 +40,7 @@
 						<a href="/" class="block py-2 pr-4 pl-3">Home</a>
 					  </li>
 					  <li>
-						<a href="#" class="block py-2 pr-4 pl-3">About</a>
+						<a href="#about-dev" class="block py-2 pr-4 pl-3">About</a>
 					  </li>
 					  <li>
 						<a href="#products" class="block py-2 pr-4 pl-3">Products</a>
@@ -128,6 +133,54 @@
 						>Email Us</button
 					>
 				</a>
+			</div>
+		</section>
+
+		<section id="about-dev" class="w-full h-fit px-5 py-12 text-white bg-gray-900 ">
+			<div class="flex flex-col items-center">
+				<h3 class="text-4xl">MEET THE DEVELOPERS</h3>
+				<div class="grid grid-cols-5">
+					<div class="flex flex-col items-center p-4 m-5 w-96 rounded-lg shadow-md">
+						<img class="rounded-lg object-scale-down h-80 w-60" src={Jay} alt="Jay" />
+						<div class="flex flex-col m-6 text-center">
+							<h3 class="text-2xl text-gray">Jeremias Bulanadi</h3>
+							<h4 class="text-xl">CS - 401</h4>
+							<h4 class="text-xl">Layout</h4>
+						</div>
+					</div>
+					<div class="flex flex-col items-center p-4 m-5 w-96 rounded-lg shadow-md">
+						<img class="rounded-lg object-scale-down h-80 w-60" src={Ed} alt="Jay" />
+						<div class="flex flex-col m-6 text-center">
+							<h3 class="text-2xl text-gray">Edward Ruben Elegino</h3>
+							<h4 class="text-xl">CS - 401</h4>
+							<h4 class="text-xl">Design</h4>
+						</div>
+					</div>
+					<div class="flex flex-col items-center p-4 m-5 w-96 rounded-lg shadow-md">
+						<img class="rounded-lg object-scale-down h-80 w-60" src={Noah} alt="Jay" />
+						<div class="flex flex-col m-6 text-center">
+							<h3 class="text-2xl text-gray">John Noah Jarry</h3>
+							<h4 class="text-xl">CS - 401</h4>
+							<h4 class="text-xl">Data</h4>
+						</div>
+					</div>
+					<div class="flex flex-col items-center p-4 m-5 w-96 rounded-lg shadow-md">
+						<img class="rounded-lg object-scale-down h-80 w-60" src={TJ} alt="Jay" />
+						<div class="flex flex-col m-6 text-center">
+							<h3 class="text-2xl text-gray">Tristan Jerico Vasco</h3>
+							<h4 class="text-xl">CS - 401</h4>
+							<h4 class="text-xl">Documentation</h4>
+						</div>
+					</div>
+					<div class="flex flex-col items-center p-4 m-5 w-96 rounded-lg shadow-md">
+						<img class="rounded-lg object-scale-down h-80 w-60" src={Mark} alt="Jay" />
+						<div class="flex flex-col m-6 text-center">
+							<h3 class="text-2xl text-gray">Mark Vincent Victorio</h3>
+							<h4 class="text-xl">CS - 401</h4>
+							<h4 class="text-xl">Functionality</h4>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	</div>
