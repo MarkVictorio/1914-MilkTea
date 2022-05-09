@@ -68,12 +68,10 @@
 				<div class="flex flex-col justify-center gap-y-4">
 					<h1 class="text-white font-black font-lobster text-7xl">1914 Milk Tea Shop</h1>
 					<span class="leading-5 font-poppins">
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis <br
-						/>
-						adipisci repudiandae, pariatur labore maxime laudantium similique
-						<br />
-						delectus, ipsa praesentium deleniti architecto, reprehenderit <br />
-						voluptates error! Earum maxime iusto natus velit adipisci! <br />
+						Have the urge to go for a flavor binge? Grab a seat and take a look on our selection<br/>
+						of local and imported Milk Tea flavors. There's something for everyone, craving for chocolate?<br />
+						Try out our selected imported chocolate sections that will surely hit the spot! <br />
+						Whatever your mood is, we have it! So stay a while and vibe like it's 1914. <br />
 					</span>
 				</div>
 			</div>
